@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GCP Vulnerable App</title>
+  </head>
+  <body>
+    <h1>GCP Vulnerable App</h1>
+    <h2>Execute Command</h2>
+    <form method="post">
+      <input type="text" name="command">
+      <button type="submit">Execute</button>
+    </form>
+    {% if output %}
+    <h2>Output:</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
+  </body>
+</html>
